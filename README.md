@@ -32,3 +32,5 @@
 - v create file called _\_config.scss_ to store all variables.
 
 - later import that file to _style.scss_
+
+---
