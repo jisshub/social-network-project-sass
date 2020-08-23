@@ -11,7 +11,40 @@ body {
   line-height: 1.6;
   background-color: #ffffff;
   color: #333333;
+}
+a {
+  text-decoration: none;
+  color: $primary-color;
+}
+ul {
+  list-style: none;
+}
+// image takes full width
+img {
+  width: 100%;
+}
+
+// navbar
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.7rem 2rem;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  top: 0;
+  opacity: 0.8;
+  border-bottom: 1px solid $primary-color;
+  ul {
+    display: flex;
+  }
   a {
-    text-decoration: none;
+    padding: 0.5rem;
+    margin: 0 0.25rem;
+
+    &:hover {
+      color: $danger-color;
+    }
   }
 }
