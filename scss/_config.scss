@@ -2,5 +2,20 @@ $primary-color: #17a2b8;
 $dark-color: #343a40;
 $light-color: #f4f4f4;
 $danger-color: #dc3545;
-$sucesss-color: #28a745;
+$success-color: #28a745;
 $max-width: 1100px;
+
+// function to set text color based on bg color lightness
+@function check-lightness($color) {
+  @if (lightness($color) > 70) {
+    @return #333333;
+  } @else {
+    @return #fff;
+  }
+}
+// create mxin - set color and bg-color
+@mixin set-bg-text-color($color) {
+  background-color: $color;
+  // text color depends on background color
+  color: check-lightness($color);
+}

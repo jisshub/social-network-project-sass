@@ -1,10 +1,10 @@
 @import 'config';
+@import 'utilities';
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
-
 body {
   font-family: 'Raleway', sans-serif;
   font-size: 1rem;
@@ -23,7 +23,6 @@ ul {
 img {
   width: 100%;
 }
-
 // navbar
 .navbar {
   display: flex;
@@ -40,6 +39,7 @@ img {
     display: flex;
   }
   a {
+    color: #ffffff;
     padding: 0.5rem;
     margin: 0 0.25rem;
 

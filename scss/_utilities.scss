@@ -1,0 +1,24 @@
+// background utility classes
+.bg {
+  // inclde the mixin here
+  &-primary {
+    @include set-bg-text-color($primary-color);
+  }
+  &-light {
+    @include set-bg-text-color($light-color);
+    border: #cccccc 1px solid;
+  }
+  &-dark {
+    @include set-bg-text-color($dark-color);
+  }
+  &-danger {
+    @include set-bg-text-color($danger-color);
+  }
+  &-success {
+    @include set-bg-text-color($success-color);
+  }
+  &-white {
+    @include set-bg-text-color(#ffffff);
+    border: #cccccc 1px solid;
+  }
+}
