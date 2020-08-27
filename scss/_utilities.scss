@@ -1,3 +1,13 @@
+// Text styles
+.x-large {
+  font-size: 4rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+.lead {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
 // background color utility classes
 .bg {
   // inclde the mixin here
@@ -21,4 +31,37 @@
     @include set-bg-text-color(#ffffff);
     border: #cccccc 1px solid;
   }
+}
+// Buttons
+.btn {
+  font-size: 1rem;
+  display: inline-block;
+  cursor: pointer;
+  background: $light-color;
+  color: #333333;
+  padding: 0.5rem 1.2rem;
+  border: none;
+  outline: none;
+  margin-right: 0.5rem;
+  // transiton all properties
+  transition: all 0.3s ease-in;
+
+  &.btn-primary {
+    // call mixin
+    @include set-bg-text-color($primary-color);
+    &:hover {
+      // invoke check-lightness() function - apply 5% means percentage v want to lighten the color
+      background: check-lightness($primary-color);
+    }
+  }
+}
+
+.dark-overlay {
+  height: 100%;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba($color: #000000, $alpha: 0.6);
 }
