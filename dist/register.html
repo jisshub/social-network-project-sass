@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/8577027fee.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Welcome to Dev Connector</title>
+  </head>
+  <body>
+    <nav class="navbar bg-dark">
+      <h1>
+        <a href="dashboard.html"><i class="fas fa-code"></i>DevConnector</a>
+      </h1>
+      <ul>
+        <li>
+          <a href="profiles.html">Developers</a>
+        </li>
+        <li><a href="register.html">Register</a></li>
+        <li><a href="login.html">Login</a></li>
+      </ul>
+    </nav>
+    <section class="container">
+      <!-- create a form -->
+      <h1 class="large text-primary">Sign Up</h1>
+      <p class="lead"><i class="fas fa-user"></i>Create An Account</p>
+      <form action="dashboard.html" class="form">
+        <div class="form-group">
+          <input
+            type="text"
+            name="name"
+            id="name"
+            required
+            placeholder="Name"
+          />
+        </div>
+        <div class="form-group">
+          <input
+            type="email"
+            name="email"
+            id="email"
+            required
+            placeholder="Email"
+          />
+          <small class="form-text">
+            This site uses Gravatar, so if u want a profile image, use a
+            Gravatar email
+          </small>
+        </div>
+        <div class="form-group">
+          <input
+            type="password"
+            name="password"
+            id="password"
+            required
+            minlength="5"
+            placeholder="Password"
+          />
+        </div>
+        <div class="form-group">
+          <input
+            type="password"
+            name="confirm"
+            id="confirm"
+            required
+            placeholder="Confirm Password"
+          />
+        </div>
+        <input type="submit" value="Register" class="btn btn-primary"/>
+      </form>
+      <p class="my-1">
+        Already have an Account? <a href="login.html">Sign In</a>
+      </p>
+    </section>
+  </body>
+</html>
