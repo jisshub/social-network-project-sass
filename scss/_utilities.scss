@@ -50,9 +50,37 @@
     // call mixin
     @include set-bg-text-color($primary-color);
     &:hover {
-      // invoke check-lightness() function - apply 5% means percentage v want to lighten the color
-      background: check-lightness($primary-color);
+      // apply lighten() function - lighten the color by 5%
+      background: lighten($color: $primary-color, $amount: 5%);
     }
+  }
+  &.btn-dark {
+    @include set-bg-text-color($dark-color);
+    &:hover {
+      background: lighten($color: $dark-color, $amount: 5%);
+    }
+  }
+  &.btn-light {
+    @include set-bg-text-color($light-color);
+    &:hover {
+      background: lighten($color: $light-color, $amount: 5%);
+    }
+  }
+  &.btn-danger {
+    @include set-bg-text-color($danger-color);
+    &:hover {
+      background: lighten($color: $danger-color, $amount: 5%);
+    }
+  }
+  &.btn-success {
+    @include set-bg-text-color($success-color);
+    &:hover {
+      background: lighten($color: $success-color, $amount: 5%);
+    }
+  }
+  &:hover {
+    background: lighten($color: $dark-color, $amount: 20%);
+    color: #ffffff;
   }
 }
 
