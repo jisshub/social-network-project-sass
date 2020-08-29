@@ -19,3 +19,22 @@ $max-width: 1100px;
   // text color depends on background color
   color: check-lightness($color);
 }
+
+// initialize a list
+$spaceamount: (1, 2, 3, 4, 5);
+
+// each loop to loop thru list
+@each $var in $spaceamount {
+  .m-#{$var} {
+    margin: #{$var}rem;
+  }
+  .my-#{$var} {
+    margin: #{$var}rem 0;
+  }
+  // .p-#{$var} {
+  //   padding: #{$var} rem;
+  // }
+  // .py-#{$var} {
+  //   padding: #{$var}rem 0;
+  // }
+}
