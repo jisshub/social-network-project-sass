@@ -97,6 +97,25 @@
     color: #ffffff;
   }
 }
+.alert {
+  background: $light-color;
+  padding: 0.8rem;
+  margin-bottom: 1.2rem;
+  opacity: 0.9;
+  // possible subclasses
+  &.alert-primary {
+    @include set-bg-text-color($primary-color);
+  }
+  &.alert-success {
+    @include set-bg-text-color($success-color);
+  }
+  &.alert-dark {
+    @include set-bg-text-color($dark-color);
+  }
+  &.alert-danger {
+    @include set-bg-text-color($danger-color);
+  }
+}
 
 .dark-overlay {
   height: 100%;

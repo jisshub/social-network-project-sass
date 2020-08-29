@@ -21,20 +21,24 @@ $max-width: 1100px;
 }
 
 // initialize a list
-$spaceamount: (1, 2, 3, 4, 5);
+$spaceamounts: (1, 2, 3, 4, 5);
 
 // each loop to loop thru list
-@each $var in $spaceamount {
+@each $var in $spaceamounts {
+  // all around margin
   .m-#{$var} {
     margin: #{$var}rem;
   }
+  // margin top and bottom
   .my-#{$var} {
     margin: #{$var}rem 0;
   }
-  // .p-#{$var} {
-  //   padding: #{$var} rem;
-  // }
-  // .py-#{$var} {
-  //   padding: #{$var}rem 0;
-  // }
+  // full padding
+  .p-#{$var} {
+    padding: #{$var}rem;
+  }
+  // padding top, bottom only
+  .py-#{$var} {
+    padding: #{$var}rem 0;
+  }
 }
