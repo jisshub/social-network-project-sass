@@ -65,3 +65,15 @@ img {
     text-align: center;
   }
 }
+.profile {
+  display: grid;
+  grid-template-columns: 2fr 4fr 2fr;
+  align-items: center;
+  grid-gap: 2rem;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  line-height: 2;
+}
+.round-image {
+  border-radius: 50%;
+}
