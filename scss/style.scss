@@ -80,6 +80,41 @@ img {
 }
 .profile-grid {
   display: grid;
-  grid-template-areas: 'top top' 'about about' 'exp edu' 'github github';
+  grid-template-areas: 'top top' 'about about' 'exp edu' 'project project' 'github github';
   grid-gap: 1rem;
+
+  .profile-top {
+    grid-area: top;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    img {
+      width: 250px;
+    }
+    .icons a {
+      color: #ffffff;
+      margin: 0 0.3rem;
+
+      &:hover {
+        color: $dark-color;
+      }
+    }
+  }
+  .profile-about {
+    grid-area: about;
+  }
+  .profile-exp {
+    grid-area: exp;
+  }
+  .profile-edu {
+    grid-area: edu;
+  }
+  .profile-project {
+    grid-area: project;
+  }
+  .profile-github {
+    grid-area: github;
+  }
 }

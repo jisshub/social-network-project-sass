@@ -24,7 +24,7 @@
 
 // background color utility classes
 .bg {
-  // inclde the mixin here
+  // include the mixin here
   &-primary {
     @include set-bg-text-color($primary-color);
   }
@@ -57,7 +57,7 @@
   border: none;
   outline: none;
   margin-right: 0.5rem;
-  // transiton all properties
+  // transition all properties
   transition: all 0.3s ease-in;
 
   &.btn-primary {
@@ -125,4 +125,7 @@
   top: 0;
   left: 0;
   background-color: rgba($color: #000000, $alpha: 0.6);
+}
+.round-img {
+  border-radius: 50%;
 }
