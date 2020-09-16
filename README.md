@@ -100,7 +100,7 @@
 </div>
 ```
 
-**scss/\_utilities.scss**
+**scss/_utilities.scss**
 
 ```scss
 // Buttons

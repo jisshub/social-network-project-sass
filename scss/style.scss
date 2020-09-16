@@ -74,6 +74,12 @@ img {
   margin-bottom: 2rem;
   line-height: 2;
 }
+
 .round-image {
   border-radius: 50%;
+}
+.profile-grid {
+  display: grid;
+  grid-template-areas: 'top top' 'about about' 'exp edu' 'github github';
+  grid-gap: 1rem;
 }
