@@ -421,3 +421,15 @@ img {
 .profile-grid .profile-github {
   grid-area: github;
 }
+
+.profile-grid .profile-github .repo {
+  display: flex;
+}
+
+.profile-grid .profile-github .repo > div:first-child {
+  flex: 7;
+}
+
+.profile-grid .profile-github .repo > div:last-child {
+  flex: 3;
+}

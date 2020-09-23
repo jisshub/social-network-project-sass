@@ -136,5 +136,14 @@ img {
   }
   .profile-github {
     grid-area: github;
+    .repo {
+      display: flex;
+      & > div:first-child {
+        flex: 7;
+      }
+      & > div:last-child {
+        flex: 3;
+      }
+    }
   }
 }
