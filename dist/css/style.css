@@ -238,6 +238,12 @@
   border-radius: 50%;
 }
 
+.line {
+  height: 1px;
+  background: #cccccc;
+  margin: 1.5rem 0;
+}
+
 .form-group {
   margin: 1.2rem 0;
 }
@@ -376,12 +382,36 @@ img {
   grid-area: about;
 }
 
+.profile-grid .profile-about .skills {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
 .profile-grid .profile-exp {
   grid-area: exp;
 }
 
 .profile-grid .profile-edu {
   grid-area: edu;
+}
+
+.profile-grid .profile-exp > div,
+.profile-grid .profile-edu > div {
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px #cccccc dotted;
+}
+
+.profile-grid .profile-exp:last-child,
+.profile-grid .profile-edu:last-child {
+  border-bottom: none;
+}
+
+.profile-grid .profile-exp p,
+.profile-grid .profile-edu p {
+  margin: 0.5rem 0;
 }
 
 .profile-grid .profile-project {

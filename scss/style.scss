@@ -104,12 +104,32 @@ img {
   }
   .profile-about {
     grid-area: about;
+    .skills {
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      align-items: center;
+    }
   }
   .profile-exp {
     grid-area: exp;
   }
   .profile-edu {
     grid-area: edu;
+  }
+  .profile-exp,
+  .profile-edu {
+    & > div {
+      margin-bottom: 1rem;
+      padding-bottom: 1rem;
+      border-bottom: 1px #cccccc dotted;
+    }
+    &:last-child {
+      border-bottom: none;
+    }
+    p {
+      margin: 0.5rem 0;
+    }
   }
   .profile-project {
     grid-area: project;
