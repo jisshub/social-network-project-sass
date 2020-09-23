@@ -224,6 +224,30 @@
   color: #fff;
 }
 
+.badge {
+  font-size: 0.8rem;
+  padding: 0.1rem;
+  text-align: center;
+  margin: 0.3rem;
+  background: #f4f4f4;
+  color: #333333;
+}
+
+.badge.badge-primary {
+  background-color: #17a2b8;
+  color: #fff;
+}
+
+.badge.badge-dark {
+  background-color: #343a40;
+  color: #fff;
+}
+
+.badge.badge-light {
+  background-color: #f4f4f4;
+  color: #333333;
+}
+
 .dark-overlay {
   height: 100%;
   position: absolute;
@@ -431,5 +455,5 @@ img {
 }
 
 .profile-grid .profile-github .repo > div:last-child {
-  flex: 3;
+  flex: 2;
 }

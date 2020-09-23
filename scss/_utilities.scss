@@ -116,6 +116,23 @@
     @include set-bg-text-color($danger-color);
   }
 }
+.badge {
+  font-size: 0.8rem;
+  padding: 0.1rem;
+  text-align: center;
+  margin: 0.3rem;
+  background: $light-color;
+  color: #333333;
+  &.badge-primary {
+    @include set-bg-text-color($primary-color);
+  }
+  &.badge-dark {
+    @include set-bg-text-color($dark-color);
+  }
+  &.badge-light {
+    @include set-bg-text-color($light-color);
+  }
+}
 
 .dark-overlay {
   height: 100%;
