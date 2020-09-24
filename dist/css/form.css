@@ -17,3 +17,28 @@
   font-size: 1.5rem;
   border: 1px solid #cccccc;
 }
+
+.form .social-input {
+  display: flex;
+}
+
+.form .social-input i {
+  padding: 0.5rem;
+  width: 4rem;
+}
+
+.form .social-input i.fa-twitter {
+  color: #3498db;
+}
+
+.form .social-input i.fa-facebook {
+  color: #2e86c1;
+}
+
+.form .social-input i.fa-youtube {
+  color: #d61717;
+}
+
+.form .social-input i.fa-linkedin {
+  color: #13c5e1;
+}
