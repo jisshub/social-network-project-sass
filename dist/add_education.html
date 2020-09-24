@@ -29,11 +29,57 @@
       </ul>
     </nav>
     <section class="container">
-      <h1 class="large text-primary">HEADING</h1>
+      <h1 class="large text-primary">Add Education</h1>
       <p class="lead">
-        <i class="fas fa-user"></i>
-        TEXT
+        <i class="fas fa-graduation-cap"></i>
+        Add School, Colleges or bootcamps you attended
       </p>
+      <small><b>*=</b>required fields</small>
+      <form class="form">
+        <div class="form-group">
+          <input
+            type="text"
+            name="school"
+            id="school"
+            placeholder="*School or College"
+          />
+        </div>
+        <div class="form-group">
+          <input
+            type="text"
+            placeholder="* Degree or Certificate"
+            name="degree"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <input type="text" placeholder="Field Of Study" name="fieldofstudy" />
+        </div>
+        <div class="form-group">
+          <h4>From Date</h4>
+          <input type="date" name="from" />
+        </div>
+        <div class="form-group">
+          <h4>To Date</h4>
+          <input type="date" name="to" />
+        </div>
+        <div class="form-group">
+          <p>
+            <input type="checkbox" name="current" value="" /> Current School
+          </p>
+        </div>
+        <div class="form-group">
+          <textarea
+            name="description"
+            id="description"
+            cols="30"
+            rows="5"
+            placeholder="Program Description"
+          ></textarea>
+        </div>
+        <input type="submit" class="btn btn-success my-1" />
+        <a href="dashboard.html" class="btn my-1">Go Back</a>
+      </form>
     </section>
   </body>
 </html>
