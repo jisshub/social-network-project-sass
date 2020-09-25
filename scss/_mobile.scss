@@ -1,0 +1,47 @@
+@media (max-width: 700px) {
+  .hide-sm {
+    display: none;
+  }
+  .container {
+    margin-bottom: 1rem;
+  }
+  // text styles
+  .x-large {
+    font-size: 2rem;
+  }
+  .lead {
+    font-size: 1rem;
+  }
+  .buttons a {
+    width: 50%;
+    margin-top: 1rem;
+    font-size: 0.8rem;
+  }
+
+  // navbar
+  .navbar {
+    display: block;
+    text-align: center;
+    ul {
+      text-align: center;
+      justify-content: center;
+    }
+    h1 {
+      margin-bottom: 1rem;
+    }
+  }
+
+  .dash-buttons a {
+    display: block;
+    width: 100%;
+    margin-top: 0.4rem;
+  }
+  .profile {
+    // everything in one column
+    grid-template-columns: 1fr;
+    text-align: center;
+    ul {
+      display: none;
+    }
+  }
+}
