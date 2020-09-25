@@ -44,4 +44,17 @@
       display: none;
     }
   }
+  .profile-grid {
+    grid-template-areas: 'top' 'about' 'exp' 'edu' 'project' 'github';
+  }
+  .profile-about {
+    .skills {
+      // change direction from row to column
+      flex-direction: column;
+    }
+  }
+  .post {
+    // stack the column
+    grid-template-columns: 1fr;
+  }
 }
